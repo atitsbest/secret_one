@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Reported by:</b>
+  <%= @task.reported_by %>
+</p>
+
+<p>
+  <b>Kind:</b>
+  <%= @task.kind %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @task.area %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @task.description %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @task.priority %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @task.state %>
+</p>
+
+<p>
+  <b>Assigned to:</b>
+  <%= @task.assigned_to_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

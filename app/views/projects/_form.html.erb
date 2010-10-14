@@ -1,0 +1,7 @@
+<%= simple_form_for(@project) do |f| %>
+	<%= f.input :name %>
+	<%= f.association :customer %>
+	<%= f.association :manager %>
+	<%= f.association :members, :as => :check_boxes, :collection => User.all %>
+	<%= f.button :submit %>
+<% end %>

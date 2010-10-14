@@ -1,0 +1,35 @@
+<h1>Listing tasks</h1>
+
+<table>
+  <tr>
+    <th>gemeldet von</th>
+    <th>Art</th>
+    <th>Bereich</th>
+    <th>Beschreibung</th>
+    <th>Prio</th>
+    <th>Status</th>
+    <th>Zust&auml;ndig</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tasks.each do |task| %>
+  <tr>
+    <td><%= task.reported_by %></td>
+    <td><%= task.kind %></td>
+    <td><%= task.area %></td>
+    <td><%= task.description %></td>
+    <td><%= task.priority %></td>
+    <td><%= task.state %></td>
+    <td><%= task.assigned_to %></td>
+    <td><%= link_to 'Show', task %></td>
+    <td><%= link_to 'Edit', edit_task_path(task) %></td>
+    <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task', new_task_path %>

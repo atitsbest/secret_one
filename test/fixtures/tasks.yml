@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  reported_by: 
+  type: MyString
+  area: MyString
+  description: MyText
+  priority: 
+  state: MyString
+  assigned_to_id: 
+
+two:
+  reported_by: 
+  type: MyString
+  area: MyString
+  description: MyText
+  priority: 
+  state: MyString
+  assigned_to_id: 
